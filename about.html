@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Lumina FX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--glass-border);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .timeline-box {
+            padding: 20px 30px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            position: relative;
+            width: 45%;
+            margin-bottom: 30px;
+            margin-left: auto;
+            /* Default for right */
+        }
+
+        .timeline-box.left {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        /* Mobile adjustment for timeline would go here */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA <span class="text-gradient">FX</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active" style="color: var(--primary-color);">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh; min-height: 400px;">
+        <div class="container">
+            <div class="hero-content fade-up">
+                <h1>About <span class="text-gradient">Lumina</span></h1>
+                <p>Pioneering the future of entertainment technology since 2010.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding: var(--section-spacing) 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="fade-up">
+                    <h2 class="text-gradient">Our Story</h2>
+                    <p style="margin-bottom: 20px;">Lumina FX was founded with a singular vision: to create safe,
+                        spectacular, and sustainable pyrotechnic displays. We recognized a gap in the market for
+                        high-quality atmospheric effects that didn't compromise on environmental standards.</p>
+                    <p>Over the years, we have grown from a small local provider to an international supplier, trusted
+                        by the biggest names in the entertainment industry. Our commitment to "Safety First" ensures
+                        that every spark is calculated and every cloud of fog is pure.</p>
+                </div>
+                <div class="fade-up">
+                    <div
+                        style="background: var(--surface-color); border-radius: 20px; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border: 1px solid var(--glass-border);">
+                        <i class="fas fa-calendar-alt" style="font-size: 4rem; color: var(--text-muted);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #020208; padding: var(--section-spacing) 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-up">
+                <h2>Our <span class="text-gradient">Values</span></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="glass-card fade-up">
+                    <i class="fas fa-shield-alt"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Safety First</h3>
+                    <p>We strictly adhere to all international safety protocols and manufacturing standards.</p>
+                </div>
+                <div class="glass-card fade-up" style="transition-delay: 0.1s;">
+                    <i class="fas fa-lightbulb"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Innovation</h3>
+                    <p>Continuously pushing the boundaries of what is possible with pyrotechnics.</p>
+                </div>
+                <div class="glass-card fade-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-leaf"
+                        style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Sustainability</h3>
+                    <p>Eco-friendly formulas that reduce smoke and residual waste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: block;">LUMINA <span
+                            class="text-gradient">FX</span></a>
+                    <p style="color: var(--text-muted);">Lighting up the world, one event at a time.</p>
+                </div>
+                <!-- Simplified footer for inner pages for brevity in code -->
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@luminafx.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Lumina FX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

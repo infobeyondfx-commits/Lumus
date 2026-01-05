@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lumina FX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            color: #fff;
+            font-family: var(--font-body);
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-info-item i {
+            width: 50px;
+            height: 50px;
+            background: var(--glass-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            margin-right: 20px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA <span class="text-gradient">FX</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active" style="color: var(--primary-color);">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 50vh; min-height: 400px;">
+        <div class="container">
+            <div class="hero-content fade-up">
+                <h1>Get in <span class="text-gradient">Touch</span></h1>
+                <p>Ready to light up your next event? We are here to help.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding: var(--section-spacing) 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <!-- Contact Info -->
+                <div class="fade-up">
+                    <h2 style="margin-bottom: 30px;">Information</h2>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p style="color: var(--text-muted);">197/1578, Innovation Hub, Mumbai, India - 400104</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p style="color: var(--text-muted);">+91 98700 64844</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p style="color: var(--text-muted);">uniquepyrotechnicandsfx@gmail.com</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px;">
+                        <h4 style="margin-bottom: 20px;">Follow Us</h4>
+                        <div style="display: flex; gap: 20px;">
+                            <a href="#" style="font-size: 1.5rem; color: #fff;"><i class="fab fa-facebook"></i></a>
+                            <a href="#" style="font-size: 1.5rem; color: #fff;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="font-size: 1.5rem; color: #fff;"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-up">
+                    <form
+                        style="background: var(--glass-bg); padding: 40px; border-radius: 16px; border: 1px solid var(--glass-border);">
+                        <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: block;">LUMINA <span
+                            class="text-gradient">FX</span></a>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +91 98700 64844</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Lumina FX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

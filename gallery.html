@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Lumina FX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            grid-auto-rows: 250px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            background: #222;
+        }
+
+        .gallery-item:nth-child(2n) {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay i {
+            color: #fff;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">LUMINA <span class="text-gradient">FX</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html" class="active" style="color: var(--primary-color);">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 8px 20px;">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 40vh; min-height: 300px;">
+        <div class="container">
+            <div class="hero-content fade-up">
+                <h1>Visual <span class="text-gradient">Proof</span></h1>
+                <p>Moments of awe captured in time.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding: var(--section-spacing) 0;">
+        <div class="container">
+            <div class="gallery-grid fade-up">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-1.jpg" alt="Concert Event">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-2.jpg" alt="Stadium Pyro">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-3.jpg" alt="Color Mines">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="assets/service-pyro.jpg" alt="Stage FX">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="assets/service-wedding.jpg" alt="First Dance">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="assets/service-corporate.jpg" alt="Corporate Event">
+                    <div class="overlay"><i class="fas fa-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: block;">LUMINA <span
+                            class="text-gradient">FX</span></a>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> press@luminafx.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Lumina FX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
